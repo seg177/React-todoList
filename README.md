@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# 리액트 Todo List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+리액트 학습용 TodoList
 
 ## Available Scripts
 

@@ -1,0 +1,44 @@
+.container{
+    width: 100%;
+    height: 30%;
+    background: #602030;
+    float: left;
+}
+.title{
+    width: 96%;
+    height: 35%;
+    color: white;
+    font-size: 25px;
+    margin: 0 auto;
+    margin-top: 4%;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 30px;
+    background: #61dafb;
+}
+
+.div_inputContainer{
+    display: flex;
+    width: 90%;
+    height: 25%;
+    color: black;
+    margin: 0 auto;
+    margin-top: 3%;
+    flex-direction: row;
+}
+
+.div_input{
+    flex: 4;
+}
+
+.div_btnContainer{
+    flex: 1;
+    margin-left: 3%;
+}
+.btn{
+    width: 100%;
+    height: 100%;
+    background: antiquewhite;
+    border-radius: 10px;
+    cursor: pointer;
+}
