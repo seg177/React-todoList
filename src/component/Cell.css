@@ -1,0 +1,61 @@
+.cellContainer{
+    width: 96%;
+    height: 40px;
+    margin: 0 auto 5px;
+    border-bottom: 1px solid #282c34;
+}
+.cellContainer > *{
+    height: 100%;
+    float: left;
+}
+.indexView{
+    width: 10%;
+    line-height: 40px;
+    text-align: center;
+    color: #282c34;
+}
+.textView{
+    width: 70%;
+    line-height: 40px;
+}
+
+.textContents{
+    font-size: 15px;
+    color: #282c34;
+    text-align: center;
+}
+.textContentsDone{
+    font-size: 15px;
+    color: #aaaaaa;
+    text-align: center;
+    text-decoration: line-through;
+}
+
+.btnView{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+}
+
+.btnView > div{
+    height: 70%;
+    width: 40%;
+    margin-top: 5px;
+    border-radius: 5px;
+    color: #282c34;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btnDone{
+    background-color: aquamarine;
+}
+.btnDelete{
+    background-color: aqua;
+}
+

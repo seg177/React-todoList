@@ -15,11 +15,13 @@ class Header extends Component{
     }
     onSubmit(){
         this.props.createToDo(this.state.text);
+       //console.log('submit');
     }
-    onKeyDown(e){
+    onKeyUp(e){
         //console.log(e.key);
         if(e.key === "Enter"){
             this.onSubmit();
+            return;
         }
     }
 
@@ -35,8 +37,7 @@ class Header extends Component{
                     <input className="div_input"
                            value={this.state.text}
                            onChange={this.onChange.bind(this)}
-                           onKeyDown={this.onKeyDown.bind(this)}
-                           onSubmit={this.onSubmit.bind(this)}
+                           onKeyUp={this.onKeyUp.bind(this)}
                     />
                     {/*생성 버튼*/}
                     <div className="div_btnContainer">

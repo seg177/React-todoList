@@ -1,18 +1,18 @@
 .container{
     width: 100%;
     height: 30%;
-    background: #602030;
+    background-color: floralwhite;
     float: left;
 }
 .title{
     width: 96%;
     height: 35%;
-    color: white;
+    color: #282c34;
     font-size: 25px;
-    margin: 0 auto;
-    margin-top: 4%;
-    overflow: hidden;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4% auto 0;
     border-radius: 30px;
     background: #61dafb;
 }
@@ -22,8 +22,7 @@
     width: 90%;
     height: 25%;
     color: black;
-    margin: 0 auto;
-    margin-top: 3%;
+    margin: 3% auto 0;
     flex-direction: row;
 }
 
@@ -38,6 +37,10 @@
 .btn{
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
     background: antiquewhite;
     border-radius: 10px;
     cursor: pointer;
