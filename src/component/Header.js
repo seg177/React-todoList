@@ -8,15 +8,17 @@ class Header extends Component{
             text: '',
         };
     }
-
+    //입력 값 변경 시
     onChange(e){
         //console.log(e.target.value);
         this.setState({text: e.target.value});
     }
+    //제출
     onSubmit(){
         this.props.createToDo(this.state.text);
        //console.log('submit');
     }
+    //Enter 입력으로 제출
     onKeyUp(e){
         //console.log(e.key);
         if(e.key === "Enter"){
