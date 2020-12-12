@@ -21,7 +21,6 @@ class Header extends Component{
         //console.log(e.key);
         if(e.key === "Enter"){
             this.onSubmit();
-            return;
         }
     }
 
