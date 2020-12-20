@@ -15,7 +15,7 @@ class List extends Component{
                     isDone={item.isDone}
                     text={item.text}
                     key={item.index}
-                    onClickDone={this.props.onClickDone}
+                    onClickDone={(index)=> this.props.onClickDone(index)}
                     onClickDelete={(index)=>this.props.onClickDelete(index)}
                 />
             )

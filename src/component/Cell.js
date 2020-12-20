@@ -8,7 +8,7 @@ const Cell = (props)=>{
                 {props.index}
             </div>
             <div className={"textView"}>
-                <div className={"textContents"}>{props.text}</div>
+                <div className={props.isDone ? "textContentsDone" : "textContents"}>{props.text}</div>
             </div>
             <div className={"btnView"}>
                 <div className={"btnDone"} onClick={()=>props.onClickDone(props.index)}>

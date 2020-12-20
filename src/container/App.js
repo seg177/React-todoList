@@ -10,23 +10,27 @@ class App extends Component{
     }
     //작업 생성
     createToDo(text){
-        const newData = this.state.data.concat();
-        const index = this.id++;
-        newData.push({index: index, text: text, isDone: false});
-        this.setState({data: newData});
+        this.setState({
+            data: this.state.data.concat({index: this.id++, text: text, isDone: false})
+        });
     }
     //작업 완료 전환
-    onClickDone(object){
-        console.log("done:"+object);
-        const data = this.state.data;
-
+    onClickDone(id){
+        let data = this.state.data;
+        const index = data.findIndex(item => item.index === id);
+        data[index] = {
+            ...data[index],
+            isDone: !data[index].isDone,
+        }
+        this.setState({
+            data: data,
+        });
     }
     //작업 삭제
     onClickDelete(id){
-        let data = this.state.data.concat();
-        const index = data.findIndex((value, index, obj)=> id === index);
-        const newData = data.filter(item => index !== item.index);
-        console.log(JSON.stringify(newData));
+        const data = this.state.data;
+        //const index = data.findIndex(item=> item.index === id);
+        const newData = data.filter(item => item.index !== id);
         this.setState({data: newData});
     }
 
