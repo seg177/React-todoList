@@ -6,14 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f35e7c5-9324-4f4e-b940-77d2038f0e44" name="Default Changelist" comment="header 컴포넌트 제작">
-      <change afterPath="$PROJECT_DIR$/src/component/Cell.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/Cell.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/List.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/List.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Cell.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Cell.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/List.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/container/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
