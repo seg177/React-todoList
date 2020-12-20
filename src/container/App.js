@@ -4,13 +4,14 @@ import ToDoHeader from "../component/Header";
 import List from '../component/List';
 
 class App extends Component{
+    id = 0;
     state = {
         data: [],
     }
     //작업 생성
     createToDo(text){
         const newData = this.state.data.concat();
-        const index = newData.length;
+        const index = this.id++;
         newData.push({index: index, text: text, isDone: false});
         this.setState({data: newData});
     }
@@ -21,13 +22,11 @@ class App extends Component{
 
     }
     //작업 삭제
-    onClickDelete(object){
-        const newData = this.state.data.concat();
-        const index = newData.findIndex((item)=>item.obj === object);
-        newData[index] = {
-            ...newData[index],
-            isDone: !newData[index].isDone,
-        }
+    onClickDelete(id){
+        let data = this.state.data.concat();
+        const index = data.findIndex((value, index, obj)=> id === index);
+        const newData = data.filter(item => index !== item.index);
+        console.log(JSON.stringify(newData));
         this.setState({data: newData});
     }
 

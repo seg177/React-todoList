@@ -7,6 +7,7 @@ class List extends Component{
     }
 
     getList(data){
+        console.log('list:'+JSON.stringify(data));
         return(
             data.map((item)=>
                 <Cell
@@ -15,7 +16,7 @@ class List extends Component{
                     text={item.text}
                     key={item.index}
                     onClickDone={this.props.onClickDone}
-                    onClickDelete={this.props.onClickDelete}
+                    onClickDelete={(index)=>this.props.onClickDelete(index)}
                 />
             )
         );

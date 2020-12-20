@@ -5,6 +5,9 @@
     border: 1px solid #282c34;
     color: white;
     flex-direction: column;
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -ms-overflow-style: none;
     padding-top: 5px;
+
 }
