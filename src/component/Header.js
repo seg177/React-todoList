@@ -8,6 +8,11 @@ class Header extends Component{
             text: '',
         };
     }
+
+    shouldComponentUpdate(nextProps, nextState, nextContext) {
+        return nextState.text !== this.state.text;
+    }
+
     //입력 값 변경 시
     onChange(e){
         //console.log(e.target.value);
@@ -27,6 +32,7 @@ class Header extends Component{
     }
 
     render() {
+        console.log('render');
         return(
             <div className="container">
                 <div className="title">
